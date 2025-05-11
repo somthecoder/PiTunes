@@ -1,4 +1,5 @@
 .env
-.raw
-.wav
+*.raw
+*.wav
 venv/
+.cache
