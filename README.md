@@ -1,1 +1,6 @@
 # RaspberryPiSpotify
+
+Somrishi: 
+Cygnus: 
+Rishi: 
+
