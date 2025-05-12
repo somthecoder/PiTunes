@@ -18,3 +18,6 @@ The goal for this project was to avoid having to type out a song you wanted to l
   Clone this repo on to the Pi. Go to your Spotify premium account and create a developer account with client id and secret along with the redirect uri. Create a .env file and in json format, input in these things. On a separate device with browser access, run the auth_comp.py script and then the command ```scp .cache pi@ip_address:repo_path``` to transfer the unique cache file to the Pi. Ensure your speaker and microphone are connected to the Pi.<br>
   Given the instructions on [the Spotifyd documentation](https://docs.spotifyd.rs/installation/index.html) and the [Spotifyd releases page](https://github.com/spotifyd/spotifyd/releases), find your right release and follow the underneath the Architecture section. You should then be able to run Spotifyd.
 
+## Usage:
+  Create a venv and install the appropriate requirements for the python scripts. Have 3 terminals open. On the first, run the command ```spotifyd --no-daemon```. On the second, run ```record_input.py``` and on the third, run ```play_song.py```. You can ignore the first and third terminals. On the second one, whenever you want to play a song, you will press the enter key and have 5 seconds to speak a song name into the microphone. After that, the song should play within a couple seconds and you can enjoy some music.
+
