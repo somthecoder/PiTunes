@@ -33,6 +33,8 @@ def get_device_id():
     raise RuntimeError(f"Device '{target_device_name}' not found.")
 
 def play_song(song_name):
+    if "rick" in song_name.lower() and "roll" in song_name.lower():
+        song_name = "Never Gonna Give You Up Rick Astley"
     results = sp.search(q=song_name, type="track", limit=1)
     if results["tracks"]["items"]:
         track = results["tracks"]["items"][0]
